@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   border-style: solid;
   border-color: coral;
@@ -8,15 +10,20 @@ body {
   padding: 10px;
   gap: 10px;
 }
-#leftlist {
+leftside:hover {
+  color: white;
+}
+
+
+/* individual boxes */
+.leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   border-style: solid;
   border-color: black;
   padding: 20px;
-}
-.leftside {
-  border-style: solid;
-  border-color: black;
-  justify-content: flex-start;
   flex-shrink: 0;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -25,26 +32,35 @@ body {
 .rightside {
   justify-content: flex-end;
   margin-left: auto;
+
   color: green;
   border-style: solid;
   border-color: coral;
 }
-
+/* navigation tabs */
 nav {
   display: flex;
-  gap: 20px;
-  color: red;
   flex-direction: column;
   justify-content: space-evenly;
+
+  gap: 20px;
+  color: red;
 }
-.icons {
+
+/* icon definitions */
+
+.socials-icons {
+  color: cyan;
+  justify-self: start;
   padding: 20px;
   display: flex;
-  color: cyan;
-  gap: px;
   justify-content: center;
   justify-content: space-evenly;
 }
-html {
-  scroll-behavior: smooth;
+.socials-icons:hover {
+  color: black;
 }
+
+#icon {
+
+ }
