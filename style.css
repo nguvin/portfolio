@@ -1,11 +1,25 @@
-h2 {
-  color: red;
-}
-h3 {
+
+body {
+  display: flex;
   color: blue;
 }
-#experience {
-  font-size: 20px;
+
+.leftside {
+  justify-content: flex-start;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+.rightside {
+  justify-content: flex-end;
+  color: green;
+}
+
+h2 {
+  display: flex;
+  gap: 20px;
+  color: red;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #header{
