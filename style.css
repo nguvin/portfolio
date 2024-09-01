@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+/* Universal color pallete WIP 
+
+*/
 body {
   border-style: solid;
   border-color: coral;
@@ -48,7 +51,12 @@ nav {
 }
 
 /* icon definitions */
-
+i {
+  color: black;
+}
+i:hover {
+  color: white;
+}
 .socials-icons {
   color: cyan;
   justify-self: start;
@@ -56,11 +64,6 @@ nav {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  border-style: solid;
+  border-color: coral;
 }
-.socials-icons:hover {
-  color: black;
-}
-
-#icon {
-
- }
