@@ -9,7 +9,7 @@ body {
   border-color: coral;
 
   display: flex;
-  color: blue;
+  color: black;
   padding: 10px;
   gap: 10px;
 }
@@ -47,23 +47,57 @@ nav {
   justify-content: space-evenly;
 
   gap: 20px;
+  border-color: red;
   color: red;
 }
-
+#leftmiddlelist {
+  color: red;
+}
 /* icon definitions */
 i {
-  color: black;
+  color: cya
 }
 i:hover {
   color: white;
 }
 .socials-icons {
   color: cyan;
-  justify-self: start;
-  padding: 20px;
+  padding: 70px;
   display: flex;
-  justify-content: center;
   justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 24px;
+
+  flex-shrink: 0;
+
   border-style: solid;
   border-color: coral;
+}
+.fa-3x{
+  color: cyan;
+  display: flex;
+  justify-content: space-evenly;
+}
+#leftlistbottom {
+
+}
+.socials-icons:hover {
+  border-color: white;
+  color: white;
+  background-color: white;
+}
+.socials-icons {
+  height: 100px;
+  width: 100px;
+}
+/*.socials-icons ::before{
+  content: 'twitter';
+  position: absolute;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-65px);
 }
