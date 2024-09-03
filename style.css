@@ -12,6 +12,7 @@ body {
   color: black;
   padding: 10px;
   gap: 10px;
+  background-color: blanchedalmond;
 }
 a {
   text-decoration: none;
@@ -56,9 +57,6 @@ nav {
 #leftmiddlelist {
   color: red;
 }
-i:hover {
-  color: white;
-}
 .socials-icons {
   border-style: solid;
   color: red;
@@ -72,11 +70,6 @@ i:hover {
 }
 .fa-3x{ /*icon definitions */
   color: pink;
-}
-.socials-icons:hover {
-  border-color: white;
-  color: white;
-  background-color: white;
 }
 /*.socials-icons {
   height: 100px;
@@ -92,4 +85,58 @@ i:hover {
   border-radius: 100px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   transform: translateY(-65px);
+} */
+.socials-icons a {
+  background-color: white;
+  padding: 1em;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.socials-container a svg {
+  height: 32px;
+}
+/* animations */
+.socials-icons a::before {
+  content:attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-30px) rotate(35deg);
+  opacity: 0;
+  transition:200ms cubic-bezier(.42,0,.44,1.68);
+}
+.socials-icons a:hover {
+  background-color: var(--accent-color);
+  fill: white;
+  color: white;
+}
+.socials-icons a::after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--accent-color);
+  transform: translateY(0) rotate(35deg);
+  opacity: 0;
+  transition:200ms cubic-bezier(.42,0,.44,1.68);
+}
+.socials-icons a:hover::before {
+  transform: translateY(-68px) rotate(0);
+  opacity: 1;
+}
+.socials-icons a:hover::after {
+  transform: translateY(-47px) rotate(0);
+  opacity: 1;
 }
