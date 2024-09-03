@@ -62,7 +62,7 @@ i:hover {
 .socials-icons {
   border-style: solid;
   color: red;
-  padding: 100px;
+  padding: 50px;
   gap: 12px;
 
   flex-shrink: 0;
