@@ -1,18 +1,21 @@
 html {
   scroll-behavior: smooth;
 }
-/* Universal color pallete WIP 
+/* Universal color pallete WIP */
+* {
+  color: /*blank*/;
+}
 
-*/
 body {
   border-style: solid;
   border-color: coral;
 
-  display: flex;
   color: black;
-  padding: 30px;
+  padding: 20px;
   gap: 10px;
   background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
 }
 #leftsidelist {
   font-size: 50px;
@@ -21,11 +24,7 @@ body {
 a {
   text-decoration: none;
 }
-leftside:hover {
-  color: white;
-}
-
-/* individual boxes */
+/* individual big boxes */
 .leftside {
   display: flex;
   flex-direction: column;
@@ -37,7 +36,6 @@ leftside:hover {
   flex-shrink: 0;
   flex-wrap: nowrap;
   flex-shrink: 0;
-  
 }
 .rightside {
   justify-content: flex-end;
@@ -52,14 +50,14 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  text-decoration: none;
 
   gap: 20px;
   border-color: red;
   color: red;
 }
-#leftmiddlelist {
+#navlist:hover {
   color: red;
+  background-color: white;
 }
 a:link {
   color: red;
@@ -73,6 +71,8 @@ a:hover {
 a:active {
   color: pink;
 }
+/* nav animation */
+
 /*icons*/
 .socials-icons {
   border-style: solid;
@@ -88,21 +88,6 @@ a:active {
 .fa-3x{ /*icon definitions */
   color: pink;
 }
-/*.socials-icons {
-  height: 100px;
-  width: 100px;
-}
-/*.socials-icons ::before{
-  content: 'twitter';
-  position: absolute;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  border-radius: 100px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  transform: translateY(-65px);
-} */
 .socials-icons a {
   background-color: white;
   padding: 1em;
@@ -113,7 +98,7 @@ a:active {
   flex-shrink: 0;
   display: grid;
   place-items: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 .socials-container a svg {
   height: 32px;
@@ -124,7 +109,6 @@ a:active {
   position: absolute;
   background-color: var(--accent-color);
   color: white;
-  text-decoration: none;
   padding: 0.5em 1em;
   border-radius: 100px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
