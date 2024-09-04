@@ -17,15 +17,11 @@ body {
   display: flex;
   justify-content: center;
 }
-#leftsidelist {
-  font-size: 50px;
-  color: blue;
-}
 a {
   text-decoration: none;
 }
 /* individual big boxes */
-.leftside {
+.left-side {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,7 +33,20 @@ a {
   flex-wrap: nowrap;
   flex-shrink: 0;
 }
-.rightside {
+/* sticky positions */
+.sticky-position {
+  position: sticky;
+  top: 10px;
+}
+ul.sticky-position {
+  position: sticky;
+  top:200px;
+}
+#left-list-bottom {
+  position: sticky;
+  bottom: -40px;
+}
+.right-side {
   justify-content: flex-end;
   margin-left: auto;
 
@@ -54,10 +63,6 @@ nav {
   gap: 20px;
   border-color: red;
   color: red;
-}
-#navlist:hover {
-  color: red;
-  background-color: white;
 }
 a:link {
   color: red;
@@ -86,7 +91,7 @@ a:active {
   align-self: center;
 }
 .fa-3x{ /*icon definitions */
-  color: pink;
+  color: black;
 }
 .socials-icons a {
   background-color: white;
@@ -100,7 +105,10 @@ a:active {
   place-items: center;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
-.socials-container a svg {
+.socials-container >a > i{
+  color: black;
+}
+.socials-container a i {
   height: 32px;
 }
 /* animations */
@@ -116,9 +124,8 @@ a:active {
   opacity: 0;
   transition:200ms cubic-bezier(.42,0,.44,1.68);
 }
-.socials-icons a:hover {
+.socials-icons :hover {
   background-color: var(--accent-color);
-  fill: white;
   color: white;
 }
 .socials-icons a::after {
@@ -141,3 +148,5 @@ a:active {
   transform: translateY(-47px) rotate(0);
   opacity: 1;
 }
+
+/* positions */
