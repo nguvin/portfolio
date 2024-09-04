@@ -42,6 +42,7 @@ ul.sticky-position {
   position: sticky;
   top:200px;
 }
+
 #left-list-bottom {
   position: sticky;
   bottom: -40px;
